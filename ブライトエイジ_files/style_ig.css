@@ -1,0 +1,1222 @@
+/*マーカーアニメーション*/
+
+.marker-animation.active{
+    background-position: -100% .5em;
+}
+
+.marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+
+/* マーカー線・ピンク */
+.marker01{
+background:linear-gradient(transparent 60%, #FFCCF9 50%);
+display: inline;
+}
+.marker02{
+background:linear-gradient(transparent 60%, #FFFC1D 50%);
+display: inline;
+}
+
+.b_yelmark{
+ font-weight: bold;
+ background: #fff9c4;
+}
+
+.b_yelmark_herf{
+ font-weight: bold;
+ background: linear-gradient(transparent 50%, #ffffbc 50%);
+}
+
+
+.b_yelmark1{
+ font-weight: bold;
+ background: linear-gradient(transparent 50%, #ffff99 50%);
+}
+
+.b_red_yelmark1{
+ font-weight: bold;
+ color: #ff0000;
+ background: linear-gradient(transparent 50%, #ffff99 50%);
+}
+
+
+.b_red_redmark1{
+ font-weight: bold;
+ color: #ff0000;
+ background: #ffe0ef;
+}
+
+
+.b_red{
+ font-weight: bold;
+ color: #ef4868;
+}
+
+.b_red_yelmark{
+ font-weight: bold;
+ color: #ef4868;
+ background: #fff9c4;
+}
+
+.b_redmark{
+ font-weight: bold;
+ background: #ffcdd2;
+ color: #FF0004;	
+}
+
+.b_redmark15{
+ font-weight: bold;
+ background: #f3f3f3;
+ color: #FF0004;	
+}
+
+
+.b_center{
+	font-size: 150%;
+	line-height: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+.b_center_130{
+	font-size: 130%;
+	font-weight: bold;
+	text-align: center;
+}
+.b_150{
+	font-weight: bold;
+	font-size: 150%;
+}
+.b_130{
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.b_110{
+	font-weight: bold;
+	font-size: 110%;
+}
+.b_80{
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.f130{
+	font-size: 130%;
+}
+
+.memo{
+	font-size: 40%;
+	color: #c0c0c0;
+	line-height: 1.5em;
+	margin: 5px 10px;
+}
+.r_memo{
+	font-size: 40%;
+	color: #c0c0c0;
+	text-align: right;
+	margin: 0 15px;
+}
+
+.memo1{
+	font-size: 40%;
+	color: #c0c0c0;
+}
+.r_memo1{
+	font-size: 40%;
+	color: #c0c0c0;
+	text-align: right;
+}
+
+.tx_right{
+	text-align: right;
+	margin: 0 10px;
+}
+
+.pr p{
+	text-align: right;
+	font-size: 11px;
+}
+
+.graph01{
+	margin: 5px 5px;
+	padding: 0px 0px;
+	background-color: #e0efff;
+}
+
+.graph01 .graph-title{
+	margin: 0px 0px;
+	padding: 5px 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #0075c2;
+}
+
+
+
+
+
+
+.box1{/*ydn05_bで使用*/
+ margin: 0px 10px 10px 10px;
+ padding: 3px 5px 3px 5px;
+ color: #808080;
+ font-weight: bold;
+ background: #f5f5f5;
+ line-height: 1.5em;
+}
+.box3{/*背景なし、青枠フレーム*/
+ margin: 10px 10px 10px 10px;
+ padding: 15px 5px 15px 5px;
+ border: solid #4169e1 1px;
+ border-radius: 5%;
+}
+
+.box4{/*白背景、影つき*/
+ background-color: #fff;
+ box-shadow: 0 0 8px #dcdcdc;
+ height: 100%;
+ width: 90%;
+ margin: 0 auto;
+ padding: 5px 5px 1px 5px;
+ display: block;
+}
+
+.box5{/*白背景、影つき*/
+ background-color: #fff;
+ box-shadow: 0 0 8px #dcdcdc;
+ max-width: 85%;
+ margin: 0 auto;
+ padding: 10px;
+ display: inline-block;
+ text-align: center;
+}
+
+.box6{/*ピンク背景、影つき*/
+ background-color: #ffeaf4;
+ box-shadow: 0 0 8px#dcdcdc;
+ height: 100%;
+ width: 90%;
+ margin: auto;
+ padding: 5px 15px 1px 15px;
+ display: inline-block;
+}
+
+.box7{/*イエロー背景、影つき*/
+ background-color: #ffffcc;
+ box-shadow: 0 0 8px#dcdcdc;
+ height: 100%;
+ width: 90%;
+ margin: auto;
+ padding: 5px 15px 1px 15px;
+ display: inline-block;
+ text-align: center;
+}
+
+
+.box8{/*グレー背景、影なし*/
+ background-color: #f3f3f3;
+ height: 100%;
+ width: 90%;
+ margin: 10px 10px 10px 10px;
+ padding: 5px 15px 1px 15px;
+ display: inline-block;
+}
+
+
+.comment02{
+  position: relative;
+  background: #fffacd;
+  box-shadow: 0px 0px 0px 5px #fffacd;
+  padding: 5px 0px 0px 6px;
+  color: #454545;
+}
+
+.comment02:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #fffacd;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+.comment03{/*クチコミのフレーム*/
+  margin: 20px 0px 20px 0px;
+  padding: 5px 5px 5px 5px;
+  border:solid 5px #ff1493;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.comment04 {/*赤枠の四角シンプルフレーム*/
+    position: relative;
+    margin: 10px auto;
+    padding: 5px 5px;
+    width: 90%;
+    background-color: #fff;
+    border: 2px solid #ff1493;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.comment04 p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.comment04a {/*青枠の丸角二重フレーム*/
+    position: relative;
+    margin: 10px auto;
+    margin: 10px auto;
+    padding: 5px 5px;
+    width: 90%;
+    background-color: #fff;
+    border: double 5px #668ad8;
+	border-radius :8px;/*角の丸み*/
+    box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+   
+}
+
+.comment05 {/*ピンクの吹き出しボックス*/
+    margin-left: 30px;
+    position: relative;
+    padding: 8px 8px 8px 20px;
+    border-radius: 10px;
+    background-color: #FFDBEA;
+	line-height: 1.2em;
+    display: inline-block;
+}
+
+.comment05:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -20px;
+    top: 20px;
+    border-right: 20px solid #FFDBEA;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.comment06{/*ピンク文字中央寄せ、フレーム無し*/
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  color: #ff69b4;
+  font-size: 130%;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.comment07 {/*オレンジ枠のシンプルフレーム*/
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px;
+    width: 90%;
+    background-color: #fff;
+    border: solid 2px #ffa500;
+	box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+   
+}
+
+
+
+/* タブ　タイトル枠　４ */
+.kakomi-tab4 {
+ position: relative;
+ margin: 2.5em auto;
+ padding: 0em 1em 0em;
+ width: 90%;
+ background-color: #fff; /*BOX背景色 */
+ border: 2px solid #ff9ece; /* 枠線の太さ・色 */
+ box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+}
+.title-tab4 {
+ position: absolute;
+ display: inline-block;
+ top: -28px; /*タブ調整 */
+ left: -2px; /*タブ調整 */
+ padding: 1px 10px;
+ height: 26px;
+ font-weight: bold;
+ color: #ffffff; /* タイトル色 */
+ background-color: #ff9ece; /* タイトル背景色 */
+ border-radius: 8px 8px 0 0;
+}
+/* シンプル 枠（影）1 */
+.kakomi-box3 {
+ margin: 10px auto;
+
+ padding: 1em;
+ width: 90%;
+ border: 1px solid #CC3333; /* 枠線 */
+ background-color: #fff; /* 背景色 */
+ box-shadow: 1px 1px 2px #ccc;
+}
+
+
+/*口コミ*/
+.box14{
+    padding: 0.2em 0.5em;
+    margin: 2em auto;
+	width: 85%;
+    background: #e6f4ff;
+    box-shadow: 0px 0px 0px 10px #e6f4ff;
+    border: dashed 2px pink;
+}
+.box14 p {
+    margin: 0; 
+    padding: 0;
+}
+.box14-title{
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: dashed 2px #ffc3c3;    
+      margin: 5px 0 10px 0;
+}
+.box14-title2{
+     text-align: center;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 10px;
+     background-color: #ffb6c1;
+}
+
+
+
+
+.title-tab3 {
+    position: absolute;
+    display: inline-block;
+    top: -28px;
+    left: -2px;
+    padding: 1px 10px;
+    height: 26px;
+    font-weight: bold;
+	font-size: 18px;
+    color: #ffffff;
+    background-color: #ff1493;
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+.comment01 {
+    position: relative;
+    padding: 10px;
+    margin: 20px 10px;
+    background: #e6f4ff;
+    
+}
+
+.com01-title{
+	color: #5c98d4;
+    font-weight: bold;
+}
+.comment01 .com{
+	font-weight: bold;
+	display: inline-block;
+	line-height: 1.5em;
+	margin: 0 15px;
+}
+
+
+.graph02{
+	margin: 20px 0px;
+	padding: 0px 0px;
+	background-color: #ffffdb;
+	border: solid 2px #FFC107;
+	border-radius: 6px;
+}
+
+.graph02 .graph-title02{
+	margin: 0px 0px;
+	padding: 0px 7px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #ff8c00;
+}
+
+.grahp03 .grahp-title03{
+	margin: 0px 0px;
+	padding: 0px 7px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #ff8c00;
+}
+	
+	
+	
+.title_00{
+	margin: 10px 0px 0px 0px;
+	line-height: 130%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.title_01{
+	margin: 10px 0px 10px 0px;
+	line-height: 170%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.title_02{
+	color: #000000;
+    background-color: #fff6ff;
+    
+	font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.title_03{
+    padding: 5px 10px 5px 15px;
+    border-left: 5px solid #f8a291;
+}
+
+
+
+
+	
+.link_r{
+	font-weight:bold;
+	text-align: right;
+	line-height: 1.5em;
+}	
+
+#fv_lap{
+	margin: 0 auto;
+}
+#fv_lap img{
+	width: 100%;
+}
+	
+
+/*-----------------吹き出し---------------------*/
+
+
+
+@media screen and (max-width: 600px) {	
+	
+	
+/*丸アイコン水色背景吹き出し*/
+.balloon1 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon1 .faceicon {
+  float: left;
+  margin-left: 5px;
+  width: 80px;
+}
+
+.balloon1 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #CCE6FF;
+  border-radius: 50%;
+}
+
+.balloon1 .chatting {
+  width: 60%;
+float: right;
+margin-right: 5%;	
+}
+
+.balloon1 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 10px 0;
+  padding: 13px;
+  border-radius: 12px;
+  background: #CCE6FF;
+}
+
+.balloon1 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #CCE6FF;
+}
+
+.balloon1 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*丸アイコンピンク背景吹き出し*/
+.balloon2 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon2 .faceicon {
+  float: left;
+  margin-left: 5px;
+  width: 80px;
+}
+
+.balloon2 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #ffeff7;
+  border-radius: 50%;
+}
+
+.balloon2 .chatting {
+  width: 60%;
+float: right;
+margin-right: 5%;	
+}
+
+.balloon2 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 10px 0;
+  padding: 13px;
+  border-radius: 12px;
+  background: #ffeff7;
+}
+
+.balloon2 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ffeff7;
+}
+
+.balloon2 .says p {
+  margin: 0;
+  padding: 0;
+}
+		
+	
+	
+/*丸アイコン黄緑背景吹き出し*/
+.balloon3 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon3 .faceicon {
+  float: left;
+  margin: 0 -100px 0 10px;
+  width: 80px;
+}
+
+.balloon3 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #B6FD94;
+  border-radius: 50%;
+}
+
+.balloon3 .chatting {
+  width: 100%;
+}
+
+.balloon3 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 5px 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #B6FD94;
+}
+
+.balloon3 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #B6FD94;
+}
+
+.balloon3 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+@media screen and (min-width: 600px) {
+	
+	
+	
+/*丸アイコン水色背景吹き出し*/
+.balloon1 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon1 .faceicon {
+  float: left;
+  margin-left: 15%;
+  width: 80px;
+}
+
+.balloon1 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #CCE6FF;
+  border-radius: 50%;
+}
+
+.balloon1 .chatting {
+  width: 50%;
+float: right;
+margin-right: 20%;	
+}
+
+.balloon1 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 10px 0;
+  padding: 13px;
+  border-radius: 12px;
+  background: #CCE6FF;
+}
+
+.balloon1 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #CCE6FF;
+}
+
+.balloon1 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*丸アイコンピンク背景吹き出し*/
+.balloon2 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon2 .faceicon {
+  float: left;
+   margin-left: 15%;
+  width: 80px;
+}
+
+.balloon2 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #ffeff7;
+  border-radius: 50%;
+}
+
+.balloon2 .chatting {
+  width: 50%;
+  float: right;
+margin-right: 20%;	
+}
+
+.balloon2 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 0;
+  padding: 15px 0;
+  border-radius: 12px;
+  background: #ffeff7;
+
+}
+
+.balloon2 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ffeff7;
+}
+
+.balloon2 .says p {
+  margin: 0;
+  padding: 0;
+}
+		
+	
+/*丸アイコン黄緑背景吹き出し*/
+.balloon3 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon3 .faceicon {
+  float: left;
+  margin-left: 15%;
+  width: 80px;
+display: block;
+}
+
+.balloon3 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #B6FD94;
+  border-radius: 50%;
+}
+
+.balloon3 .chatting {
+  width: 50%;
+  float: right;
+  margin-right: 20%;	
+}
+
+.balloon3 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 0;
+  padding: 10px;
+  border-radius: 12px;
+  background: #B6FD94;
+  text-align: left;
+}
+
+.balloon3 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #B6FD94;
+}
+
+.balloon3 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+
+	
+}
+	
+/*丸アイコン青色背景吹き出し*/
+.balloon4 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon4 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon4 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #ADFBF7;
+  border-radius: 50%;
+}
+
+.balloon4 .chatting {
+  width: 100%;
+}
+
+.balloon4 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #ADFBF7;
+}
+
+.balloon4 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ADFBF7;
+}
+
+.balloon4 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*吹き出し枠 */
+.fukidesc {
+  display: table;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.fukicell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.fukidesc .fukibig {
+  width: 62%;
+}
+
+.fukiimg {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.fukiimg img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.15);
+}
+
+.fukicell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 49%;
+  position: relative;
+}
+
+.fukip {
+  border: #ccc solid 3px;
+  position: relative;
+  background: white;
+  padding: 12px 10px;
+  border-radius: 13px;
+}
+
+.fukip:before {
+  border-right: 23px solid #ccc;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  top: 30%;
+  content: '';
+  position: absolute;
+  left: -23px;
+}
+
+.fukip p {
+  margin: 0;
+}
+
+.fukip:after {
+  content: '';
+  position: absolute;
+  border-right: 24px solid #fff;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  top: 30%;
+  left: -17px;
+}
+
+@media screen and (max-width: 600px) {
+  .fukicell, .fukidesc, .fukip, .fukiimg,
+  .post-content .codefuki .codebig, .fukiimg img,
+  .post-content .fukidesc .fukisml,
+  .post-content .fukidesc .fukibig {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fukiimg {
+    padding: 10px 25px;
+  }
+
+  .fukiimg {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .fukip:before {
+    border-bottom: 20px solid silver;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -40px;
+    content: '';
+    position: absolute;
+    left: 40%;
+  }
+
+  .fukip:after {
+    border-bottom: 20px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -37px;
+    content: '';
+    position: absolute;
+    left: 40%;
+  }
+
+  .fukicell {
+    padding-top: 0px;
+    padding-right: 0;
+  }
+
+  .fukip {
+    border-radius: 6px;
+    background: white;
+    margin-top: -14px;
+    border: solid 2px silver;
+  }
+}
+
+/*-----------------フラッシュ---------------------*/
+.switch {
+ -webkit-animation: switchtext 0.8s infinite alternate;
+ -moz-animation: switchtext 0.8s infinite alternate;
+ animation: switchtext 0.8s infinite alternate;
+}
+@-webkit-keyframes switchtext {
+ from { opacity: 1.0; }
+ to { opacity: 0; }
+}
+@-moz-keyframes switchtext {
+ from { opacity: 1.0; }
+ to { opacity: 0; }
+}
+@keyframes switchtext {
+ from { opacity: 1.0; }
+ to { opacity: 0; }
+}
+
+	
+
+/*丸アイコンピンク背景吹き出し*/
+.balloon22 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon22 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon22 .faceicon_right {
+  float: right;
+  margin-left: -90px;
+  width: 80px;
+}
+
+.balloon22 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #ffeff7;
+  border-radius: 50%;
+}
+
+.balloon22 .faceicon_right img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #ffeff7;
+  border-radius: 50%;
+}
+
+.balloon22 .chatting {
+  width: 100%;
+}
+.balloon22 .chatting_right {
+  width: 100%;
+  text-align: right;
+}
+.balloon22 .chatting_right {
+  width: 100%;
+}
+
+.balloon22 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #ffeff7;
+  font-size: 16px;
+}
+
+.balloon22 .says_right {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 105px 0 30px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #ffeff7;
+  text-align: left;
+  font-size: 16px;
+}
+
+.balloon22 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ffeff7;
+}
+	
+.balloon22 .says_right:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  right: -24px;
+  border: 12px solid transparent;
+  border-left: 12px solid #ffeff7;
+}
+
+.balloon22 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*丸アイコン青色背景吹き出し*/
+.balloon44 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon44 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon44 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #DDFFFF;
+  border-radius: 50%;
+}
+
+.balloon44 .chatting {
+  width: 100%;
+}
+
+.balloon44 .says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #DDFFFF;
+  font-size: 16px;
+}
+
+.balloon44 .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #DDFFFF;
+}
+
+.balloon44 .says p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*文字装飾
+---------------------------------------------------------------------------*/
+.x14{ font-size:14px;}
+.x24_b_sen{font-size:24px; font-weight:bold; text-decoration: underline}
+.x24_b{font-weight:bold; font-size:24px;}
+
+
+/* シンプル 枠（影）1 */
+.kakomi-box33 {
+ margin: 3em auto;
+ margin-bottom: 2em;
+ padding: 1em;
+ width: 90%;
+ border: 1px solid #CC3333; /* 枠線 */
+ background-color: #fff; /* 背景色 */
+ box-shadow: 1px 1px 2px #ccc;
+}
+
+
+.box27 {
+    position: relative;
+    margin: 1em 0;
+    border: solid 3px #f08080;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #f08080;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.comment10{/*ピンク文字中央寄せ、フレーム無し*/
+  color: #ff69b4;
+  font-size: 100%;
+  font-weight: bold;
+}
