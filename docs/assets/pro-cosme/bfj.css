@@ -1,0 +1,38 @@
+h1 {
+    background:#FCD3D1;
+}
+
+.title-tab4 {
+background-color: #fe929f
+;    
+}
+
+.kakomi-tab4 {
+    border:2px solid #fe929f;
+}
+
+.h_style_02 {
+    background: #FCD3D1;
+border-left: #fe929f solid 7px;;
+text-shadow: 0px 0px 0 #fff;
+}
+
+.balloon22 .says_right {
+background: #FCD3D1;
+
+}
+
+.balloon22 .says_right:after {
+    border-left: 12px solid #FCD3D1;
+}
+
+.balloon22 .faceicon_right img {
+
+    border: #ffffff;
+}
+.balloon44 .faceicon img {
+
+    border:#ffffff;
+}
+
+
