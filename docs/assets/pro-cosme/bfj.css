@@ -1,20 +1,22 @@
 h1 {
-    background:#FCD3D1;
+    background:#fe929f;
+    
 }
 
 .title-tab4 {
-background-color: #fe929f
+background-color: #c71585
 ;    
 }
 
 .kakomi-tab4 {
-    border:2px solid #fe929f;
+    border:2px solid #c71585;
 }
 
 .h_style_02 {
-    background: #FCD3D1;
-border-left: #fe929f solid 7px;;
+    background: #c71585;
+border-left: #ea84c4 solid 7px;;
 text-shadow: 0px 0px 0 #fff;
+color: white;
 }
 
 .balloon22 .says_right {
@@ -33,6 +35,15 @@ background: #FCD3D1;
 .balloon44 .faceicon img {
 
     border:#ffffff;
+}
+
+.box6 {
+background-color: #FCD3D1;
+
+}
+#second_gl {
+    border: 1px solid #c71585;
+
 }
 
 
