@@ -38,7 +38,8 @@ background: #FCD3D1;
 }
 
 .box6 {
-background-color: #FCD3D1;
+background-color: #fff;
+box-shadow: 0 0 0px#fff;
 
 }
 #second_gl {
@@ -46,4 +47,19 @@ background-color: #FCD3D1;
 
 }
 
+.balloon44 .says {
+background: #fedda4;
+}
+
+.balloon44 .says:after{
+
+    border-right: 12px solid #fedda4;
+}
+
+
+
+
+
+
+}
 
