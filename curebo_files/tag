@@ -1,0 +1,8 @@
+BrightTag.site('i8xhBKM',function(s){
+s.script('https://s.yimg.jp/images/listing/tool/cv/ytag.js').wait(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n          yjDataLayer \x3d window.yjDataLayer || [];\n\n          function ytag() {\n            yjDataLayer.push(arguments);\n          }\n\n          ytag({\x22type\x22:\x22ycl_cookie\x22, \x22config\x22:{\x22ycl_use_non_cookie_storage\x22:true}});\n      \x3c/script\x3e',{tagId:-4});
+s.domready(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n    window._pt_lt \x3d new Date().getTime();\n    window._pt_sp_2 \x3d [];\n    _pt_sp_2.push(\x27setAccount,4e80e670\x27);\n    var _protocol \x3d ((\x22https:\x22 \x3d\x3d document.location.protocol) ? \x22 https://\x22 : \x22 http://\x22);\n    (function() {\n        var atag \x3d document.createElement(\x27script\x27); atag.type \x3d \x27text/javascript\x27; atag.async \x3d true;\n        atag.src \x3d _protocol + \x27js.ptengine.jp/pta.js\x27;\n        var stag \x3d document.createElement(\x27script\x27); stag.type \x3d \x27text/javascript\x27; stag.async \x3d true;\n        stag.src \x3d _protocol + \x27js.ptengine.jp/pts.js\x27;\n        var s \x3d document.getElementsByTagName(\x27script\x27)[0]; \n        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);\n    })();\n\x3c/script\x3e',{tagId:4653431});
+});
+});
+});
