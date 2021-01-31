@@ -1,0 +1,608 @@
+@charset "utf-8";
+/*twentyseventeen
+ Theme Name:   Twenty Seventeen Child
+ Description:  Twenty Seventeen Child Theme
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twenty-seventeen-child
+*/
+
+/*
+子テーマ
+*/
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+/*@import url(https://fonts.googleapis.com/css?family=Merriweather); */
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Material Icons'),
+		local('MaterialIcons-Regular'),
+		url(./assets/fonts/materialicons/MaterialIcons-Regular.woff2) format('woff2'),
+		url(./assets/fonts/materialicons/MaterialIcons-Regular.woff) format('woff'),
+		url(./assets/fonts/materialicons/MaterialIcons-Regular.ttf) format('truetype')
+	;
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	vertical-align: middle;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.ma-run{
+	color:#DB218F;
+	font-size:1.4em;
+	position: relative;
+	top:-2px;
+}
+
+.ma-downch{
+	color:#DB218F;
+	font-size:1.5em;
+	position: relative;
+	margin-right:5px;
+	
+}
+
+
+
+
+
+/*リセット*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+         -o-box-sizing: border-box !important;
+        -ms-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+}
+
+html,body {
+    color:#000000;
+    margin:0px;
+    padding:0px;
+    font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif, Meiryo,'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Noto Sans Japanese', 'ＭＳ Ｐゴシック', Osaka, Tahoma, Verdana, Arial, Verdana;
+    background-color: #fff;
+	word-wrap: break-word;	
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+img {
+    border: none;
+    padding:0px;
+    vertical-align:middle;
+}
+input,textarea,select {
+    font-size: 1em;
+}
+form {
+    margin: 0px;
+}
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+    display: block;
+}
+em{
+    font-style: normal;
+}
+
+a{
+	text-decoration: underline;
+}
+
+p{
+	line-height:1.9em;
+}
+
+
+
+.box_780px{
+	width:780px !important;
+	margin:0 auto !important;
+}
+
+.st_center {
+	text-align:center;
+}
+
+.h1_text_01 {
+	font-size:1.6em;
+	font-weight: bold;
+}
+.small_text {
+	font-size:0.9em;
+}
+
+.bold_text{
+	font-weight:bold;
+}
+
+.st_right {
+	text-align: right;
+}
+
+.mg_bt_10{
+	margin-bottom:10px;
+	
+}
+
+.mg_clear{
+	margin:0 !important;
+}
+
+.block_st_01{
+	border:1px solid #ccc;
+	padding:10px;
+	
+}
+
+.vert_top{
+	vertical-align: top;
+}
+
+.disp_inline{
+	display: inline !important;
+}
+
+.disp_inline_block{
+	display: inline-block !important;
+}
+
+.disp_block{
+	display: block !important;
+}
+
+.disp_none{
+	display: none !important;
+}
+
+.float_left{
+	float: left !important;
+}
+
+.float_right{
+	float: right !important;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.clear_after:after{
+    content: "" !important;
+    clear: both !important;
+    height: 0 !important;
+    display: block !important;
+    visibility: hidden !important;	
+}
+
+.a_under{
+	text-decoration: underline !important;
+}
+
+.stxt{
+	font-size:11px;
+}
+
+
+
+/* ライター表記 */
+.writer_info:after{
+    content: "" !important;
+    clear: both !important;
+    height: 0 !important;
+    display: block !important;
+    visibility: hidden !important;
+}
+
+.writer_info .elementor-widget-wrap{
+	display: block !important;
+}
+
+
+.writer_info .writer_icon{
+	float:left;
+	width:55px !important;
+}
+
+.writer_info .writer_icon img{
+	width:100%;
+}
+
+.writer_info .writer_parts{
+	float:left;
+	width:calc(100% - 55px) !important;
+	padding-left:10px;
+	font-size:1em;
+}
+
+
+/* Shortcodes Ultimate用CSS */
+/* ボタン */
+.su-button{
+	font-weight:bold !important;
+	padding:10px 0 !important;
+
+}
+
+.su-button span{
+	line-height: 1.5 !important;
+}
+
+
+/* 汎用ボタン */
+.cta_bt_01{
+	margin:10px 0;
+	text-align: center;
+	letter-spacing:-0.03em;
+}
+
+.cta_bt_01 > a{
+	display: inline-block;
+	border-radius: 20px;
+	font-size:1.6em;
+	font-weight:bold;	
+	background:#96D947;
+	padding:10px 40px;
+	line-height: 1.5;
+	color:#fff;
+}
+
+.cta_bt_01_pk{
+	margin:10px 0;
+	text-align: center;
+	letter-spacing:-0.03em;
+}
+
+.cta_bt_01_pk > a{
+	display: inline-block;
+	border-radius: 20px;
+	font-size:1.3em;
+	font-weight:bold;
+	background:#FF214F;
+	padding:30px 80px;
+	line-height: 1.5;
+	color:#fff;
+	text-decoration: none;
+}
+
+/* 動的に隠れるヘッダー */
+#header_01{
+	background:#fff;
+	position: fixed;
+	z-index:10;
+	top:0;
+	left:0;
+	height: 75px;
+	overflow: hidden;
+}
+
+#first_view{
+	margin-top:75px !important;	
+}
+
+
+
+
+/*タイトル*/
+.heading-title-01 h2{
+	font-size: 1.5em !important;
+	padding: 10px!important;
+	border-bottom: 1px dotted #300!important;
+	border-left:5px solid #777!important;
+	font-weight: bold!important;
+	color:#000!important;
+	margin:10px 0 !important;
+}
+
+
+/*ボタン　hover時のアクション*/
+.hover_shadow_01{
+	position: relative;
+	transition: all 0.1s ;
+}
+
+.hover_shadow_01 > a:hover{
+  box-shadow: 0 2px 5px #333;
+  top:-2px;
+}
+
+
+/* elementorエディタ用 */
+.elementor-section{
+	width:780px !important;
+	margin:0 auto !important;
+}
+
+.elementor-section-clear{
+	width:100% !important;
+	margin:0 !important;
+}
+
+.elementor-text-editor p{
+	margin:0px !important;
+	line-height: 1.7em !important;
+	/* font-size:1.1em !important; 2018.3.22 remove */
+	font-size:16px !important;
+}
+
+.elementor-image-box-title{
+	font-size:1em !important;
+	font-weight:normal !important;
+}
+
+.elementor-image-box-title > a{
+	text-decoration: underline !important;
+}
+
+.elementor-section-boxed > .elementor-container {
+    max-width: 100% !important;
+}
+
+.elementor-widget:not(:last-child){
+	margin-bottom:0 !important;
+}
+
+.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated{
+	padding:0px !important;
+}
+
+.border-bottom-01{
+	border-bottom:1px solid #ddd !important;	
+}
+
+.is-fixed {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 2 !important;
+  width: 100% !important;
+}
+
+
+.width_10per{
+	width:10% !important;
+}
+
+.width_20per{
+	width:20% !important;
+}
+
+.width_70per{
+	width:70% !important;
+}
+
+.width_80per{
+	width:80% !important;
+}
+
+.width_90per{
+	width:90% !important;
+}
+
+.width_100per{
+	width:100% !important;
+}
+
+
+
+
+
+
+
+
+
+/******************
+Just TinyMCE Custom Stylesプラグイン用のスタイル
+※プラグインで設定したCSSと同じ記述を以下に記述する
+******************/
+.pink_line {
+	background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFCFE5 0%) repeat scroll 0 0;
+}
+
+.blue_line{
+	background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #B1FDF6 0%) repeat scroll 0 0;
+}
+
+.yellow_line {
+	background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF82 0%) repeat scroll 0 0;
+}
+
+
+
+
+.act_line{
+	background-position:-100% 1.3em !important;
+}
+
+.act_line_off{
+	background:0% 1.3em !important;
+}
+	
+.pink_line_narrow{
+	/*background:rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #FF70B6 0%) repeat scroll 0 0;*/
+	padding:3px 1px;
+	background-size:200% 4px;
+	background-repeat:repeat-x;
+	-webkit-transition:all 5s ease;
+	-moz-transition:all 5s ease;
+	-o-transition:all 5s ease;
+	-ms-transition:all 5s ease;
+	background-image:-webkit-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(255,4,183,0.75) 50%);
+	background-image:-moz-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(255,4,183,0.75) 50%);
+	background-image:-o-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(255,4,183,0.75) 50%);
+	background-image:-ms-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(255,4,183,0.75) 50%);
+	background-image:linear-gradient(left, rgba(130,255,5,0) 50%, rgba(255,4,183,0.75) 50%);
+	/*background-position:0% 1.3em;*/
+	background-position:-100% 1.3em;
+}
+
+.blue_line_narrow {
+	/*background:rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #FF70B6 0%) repeat scroll 0 0;*/
+	padding:3px 1px;
+	background-size:200% 4px;
+	background-repeat:repeat-x;
+	-webkit-transition:all 5s ease;
+	-moz-transition:all 5s ease;
+	-o-transition:all 5s ease;
+	-ms-transition:all 5s ease;
+	background-image:-webkit-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(2,255,204,0.75) 50%);
+	background-image:-moz-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(2,255,204,0.75) 50%);
+	background-image:-o-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(2,255,204,0.75) 50%);
+	background-image:-ms-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(2,255,204,0.75) 50%);
+	background-image:linear-gradient(left, rgba(130,255,5,0) 50%, rgba(2,255,204,0.75) 50%);
+	/*background-position:0% 1.3em;*/
+	background-position:-100% 1.3em;
+}
+
+.yellow_line_narrow{
+	/*background:rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #FF70B6 0%) repeat scroll 0 0;*/
+	padding:3px 1px;
+	background-size:200% 4px;
+	background-repeat:repeat-x;
+	-webkit-transition:all 5s ease;
+	-moz-transition:all 5s ease;
+	-o-transition:all 5s ease;
+	-ms-transition:all 5s ease;
+	background-image:-webkit-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(248,255,0,0.92) 50%);
+	background-image:-moz-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(248,255,0,0.92) 50%);
+	background-image:-o-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(248,255,0,0.92) 50%);
+	background-image:-ms-linear-gradient(left, rgba(130,255,5,0) 50%, rgba(248,255,0,0.92) 50%);
+	background-image:linear-gradient(left, rgba(130,255,5,0) 50%, rgba(248,255,0,0.92) 50%);
+	/*background-position:0% 1.3em;*/
+	background-position:-100% 1.3em;
+}
+
+.padding_clear{
+	padding:0 !important;
+}
+
+.padding_clear .elementor-row{
+	padding:0 !important;
+}
+
+
+/* 2019.9.5 add */ 
+#cura_img {
+	width:auto;	
+}
+/* ／ 2019.9.5 add */
+
+
+
+/************************************
+** 動くボタンのCSS
+************************************/
+
+
+/**********************************************************
+
+スマホ用
+
+**********************************************************/
+@media screen and (max-width:767px) {
+		
+	
+	.elementor-row{
+		padding:0 5px !important;
+	}
+	
+	img {
+		max-width : 100% ;
+		height : auto ;
+	}
+	
+	iframe {
+		width : 100% ;
+	}
+	
+	/* elementorエディタ用 */
+	.elementor-section{
+			width:100% !important;
+			margin:0 !important;
+			padding:0 5px !important;
+	}
+	
+	.sp_width_100per{
+		width:100% !important;			
+	}
+	
+	.sp_text_align_center{
+		text-align:center !important;
+	}
+	
+
+
+	
+	
+	/* ライター表記 */
+	.writer_info .writer_icon{
+		width:45px;
+		padding-top:2px;
+	}
+
+	.writer_info .writer_parts{
+		width:calc(100% - 58px);
+		padding-left:5px;
+		font-size:0.9em;
+	}
+
+	
+	/* Shortcodes Ultimate用CSS */
+	/* ボタン */
+	.su-button{
+		width:90%;
+	}
+	
+	.su-button span{
+		font-size:4.5vw !important;
+		padding:10px !important;
+	}
+	
+	
+	/* 動くマーかー関連 */
+	.act_line{
+		background-position:-100% 1.1em !important;
+	}
+
+	.act_line_off{
+		background:0% 1.1em !important;
+	}
+
+	.pink_line_narrow {
+		background-size: 200% 10px;
+		background-position: -100% 1.1em;
+	}
+	
+	
+	
+}
+
+
+
