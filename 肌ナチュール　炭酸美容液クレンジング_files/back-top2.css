@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#back-top_area {
+	float:center;
+}
+
+
+#back-top02 {
+	position: fixed;
+	bottom: 0px;
+}
+
+#back-top a {
+	width: 640px;
+	display: block;
+}
+
+#back-top span{
+	width: 640px;
+	height: 150px;
+	display: block;
+	margin-bottom: 0px;
+	background: url('/r/gold/ad/n/img/cleansing/smp/cartjump_1006b.png') no-repeat center center;
+}
+

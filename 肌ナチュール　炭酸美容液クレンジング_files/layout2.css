@@ -1,0 +1,438 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+}
+
+body,
+table,
+input, textarea, select, option {
+	font-family: HiraKakuProN-W3;
+	font-size: 1em;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img{height:auto;width:100%; vertical-align:top; border-style:none;}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+
+/* -------------------------------------------
+.opCity
+------------------------------------------- */
+a:hover img.opCity {
+	filter:alpha(opacity=75); /*IE*/
+	-moz-opacity:0.75; /*FF*/
+	opacity:0.75;
+}
+
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	text-align: center;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#gHeader {
+
+}
+
+/*------------------------------------------------------------
+	コンテンツ
+------------------------------------------------------------*/
+#conts {
+
+}
+
+#conts .area1{
+	margin-bottom:20px;
+}
+
+#conts .area2,#conts .area6{
+	margin-bottom:5px;
+	background:#FFF3DA;
+	text-align:left;
+	font-weight:bold;
+	font-size: 0.9em;	
+}
+	#conts .area2 p,#conts .area6 p{
+		background:#AB0000;
+		color:#fff;
+		clear:both;
+		text-align:center;	
+	}
+	#conts .area2 div.box,#conts .area6 div.box{padding:10px;}
+	#conts .area2 div.box img,#conts .area6 div.box img{
+		float:left;
+		margin:0 1.5em 10px 0;
+		width:30%;
+		height:auto;
+	}
+	#conts .area2 div.box span,#conts .area6 div.box span{
+		color:#990000;
+	}
+
+#conts .area3{
+	text-align:left;
+	position:relative;
+	margin-bottom:10px;
+}
+	#conts .area3 p{
+		position:absolute;
+		left:4%;
+		top:65%;
+		width:55%;
+		font-size:70%;	
+	}
+
+#conts .area4{
+	text-align:left;
+	background: -moz-linear-gradient(top, #fff, #F9F7E9);　/* Firefox用 */  
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F9F7E9));　/* Safari,Google Chrome用 */
+	padding-top:10%;
+	padding-left:3%;
+	padding-right:2%;
+	font-size:90%;
+}
+	#conts .area4 span{
+		color:#CC0000;
+	}
+
+#conts .area5_1{
+	text-align:left;
+	position:relative;	
+}
+	#conts .area5_1 p{
+		position:absolute;
+		top:50%;
+		left:54%;
+		width:45%;
+		font-size:64%;
+		line-height:1.2em;	
+	}
+#conts .area5_2{
+	text-align:left;
+	position:relative;		
+}
+	#conts .area5_2 p{
+		position:absolute;
+		top:56%;
+		left:4%;
+		width:46%;
+		font-size:64%;
+		line-height:1.2em;
+	}
+
+#conts .area7{
+	margin-bottom:20px;
+	text-align:left;
+	position:relative;
+	background:#FDDEC1;
+	padding-bottom:10%;
+}
+	#conts .area7 p{
+		position:absolute;
+		top:45%;
+		left:35%;
+		width:65%;
+		font-size:64%;
+		line-height:1.2em;
+	}
+	#conts .area7 span{
+		color:#CC0000;
+	}
+
+#conts .area8{
+	margin-bottom:20px;
+	text-align:left;
+	position:relative;
+}
+	#conts .area8 p{
+		position:absolute;
+		top:68%;
+		left:4%;
+		width:50%;
+		font-size:75%;
+		line-height:1.2em;
+		color:#fff;
+	}
+
+#conts .banner{margin-bottom:20px;}
+#conts .banner img{width:95%; height:auto;}
+
+#conts .border1{border:#C7A22E solid 4px;}
+
+/* #bottom_area */
+#bottom_area{
+background:#FEF5C5;
+color:#724C01;
+font-size: 0.76em;
+text-align:left;
+padding:10px;	
+}
+
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#gFooter {
+	padding:0;
+	text-align:center;
+	font-size: 0.55em;
+	
+	margin-bottom: 200px;	/* 購入ボタンが重なるのを回避 */
+
+}
+
+#gFooter ul{
+	border-left:#CB8A03 solid 1px;
+	background:#734D02;
+	width:99%;
+	float:left;
+}
+#gFooter ul li{
+	float:left;
+	width:25%;
+}
+#gFooter ul li a{
+	display:block;
+	background:#734D02;
+	border-right:#CB8A03 solid 1px;
+	color:#fff;
+	line-height:1.5em;
+	padding:18px 0;
+	text-decoration:none;
+	height:28px;
+}
+#gFooter ul li.last{width:25%;}
+#gFooter ul li a:hover{background:#B28500;}
+
+address {
+	padding:12px 0;
+	border-top:solid 1px #B90000;
+	text-align:center;
+	color:#fff;
+	background:#AA0000;
+	clear:both;
+	font-style:normal;font-weight:normal;
+	font-size: 0.92em;
+}
+
+/*------------------------------------------------------------
+フォントサイズが横にした時に変わらないようにする
+------------------------------------------------------------*/
+body {-webkit-text-size-adjust: none;}
+
+/* -------------------------------------------
+ClearFix
+------------------------------------------- */
+.clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+	/* for IE6 */
+	* html .clearfix { display:inline-block; }
+	
+	/* for IE7 */
+	*+html .clearfix { display:inline-block; }
+	
+	
+	
+/*------------------------------------------------------------
+	追加コンテンツ
+------------------------------------------------------------*/	
+	
+.how_to_use03{
+	margin: 0 auto;
+	width:100%;
+	background: url(http://k-cosme.jp/gold/pb_image/h_cleansing/smp/how_to_use03.jpg) no-repeat 0 0;
+}
+	
+
+
+#conts .area9{
+	margin-bottom:20px;
+	text-align:left;
+	position:relative;
+}
+	#conts .area9 p{
+		position:absolute;
+		top:25%;
+		left:7%;
+		width:38%;
+		font-weight:bold;
+		font-size: 1.3em;
+		line-height:1.2em;
+	}
+		#conts .area9 p span{
+			color:#FF66CC;
+		}
+	
+	
+#conts .area10{
+	margin-bottom:20px;
+	text-align:left;
+	position:relative;
+}
+	#conts .area10 p{
+		position:absolute;
+		top:20%;
+		right:5%;
+		width:38%;
+		font-weight:bold;
+		font-size: 1.2em;
+		line-height:1.2em;
+	}	
+		#conts .area10 p span{
+			color:#FF66CC;
+		}
+		
+
+
+#conts .area11{
+	margin-bottom:20px;
+	text-align:left;
+	position:relative;
+}
+	#conts .area11 p{
+		position:absolute;
+		top:15%;
+		left:7%;
+		width:38%;
+		font-weight:bold;
+		font-size: 1.3em;
+		line-height:1.2em;
+	}
+		#conts .area11 p span{
+			color:#FF66CC;
+		}
+
+
+
+
+	
+#conts .area12{
+	margin-bottom:5px;
+	text-align:left;
+	position:relative;
+	font-size:63%;
+	line-height:1.3em;
+}
+
+	#conts .area12 p.box01{
+		position:absolute;
+		top:35%;
+		padding:10px;
+		left:35%;
+		width:60%;
+		height:auto;
+		
+	}
+	#conts .area12 p.box02{
+		position:absolute;
+		top:65%;
+		padding:10px;
+		left:4%;
+		width:90%;
+		height:auto;
+		
+	}
+	
+	
+strong {
+	background:url(http://k-cosme.jp/gold/pb_image/h_cleansing/smp/line.png) repeat-x bottom;
+}
+	
+div#adjust-1 {
+    float: left;
+}
+
+div#adjust-1-1 {
+    height: 380px;
+}
+
+div#adjust-1-2 {
+    clear: both;
+}
+	
+	
+/*------------------------------------------------------------
+	追加CSS　201412 furubayashi
+------------------------------------------------------------*/		
+
+.tb_m15{
+	margin: 15px 0 15px 0;
+}
+	
+.tb_m50{
+	margin: 50px 0 50px 0;
+}
+	
+.topcart{
+	margin: 10px auto 30px;
+	width: 95%;
+}		
+	
+	
+	
+	

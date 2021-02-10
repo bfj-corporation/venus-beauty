@@ -1,0 +1,59 @@
+/******************************************************************
+Theme Name: 06：pc_comments
+Theme URI: 
+Description: PC用コメント欄あり
+Author: adCreative
+Author URI: 
+Version: 1.0
+Tags: 
+License: WTFPL
+License URI: 
+Are You Serious? Yes.
+******************************************************************/
+
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+
+/*****************************************************************/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html{ font-size: 62.5%; height: 100%; width: 100%;}
+
+.all {
+	color:#333333;
+	line-height: 1.6;
+	-webkit-text-size-adjust: 100%;
+	font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	height: 100%;
+	width: 100%;
+	}
+
+.header{
+	background-color: #fff;
+/*IE8のみ*/
+	border-bottom: solid 1px #ebedea\9;
+}
+
+@media screen and ( max-width:815px ){
+.wrapper{
+	position: relative;
+}
+
+.header{
+	margin-bottom:0;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 3;
+	box-shadow: none;
+}
+
+}
